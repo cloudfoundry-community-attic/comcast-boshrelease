@@ -1,0 +1,5 @@
+check process comcast
+  with pidfile /var/vcap/sys/run/comcast/comcast.pid
+  start program "/var/vcap/jobs/comcast/bin/monit_debugger comcast_ctl '/var/vcap/jobs/comcast/bin/comcast_ctl start'"
+  stop program "/var/vcap/jobs/comcast/bin/monit_debugger comcast_ctl '/var/vcap/jobs/comcast/bin/comcast_ctl stop'"
+  group vcap

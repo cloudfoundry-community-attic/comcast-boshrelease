@@ -1,0 +1,13 @@
+---
+name: comcast
+packages: []
+templates:
+  bin/monit_debugger: bin/monit_debugger
+  bin/comcast_ctl: bin/comcast_ctl
+  config/comcast.conf.erb: config/comcast.conf
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+properties:
+  comcast.leader_address:
+    description: Hostname/IP to the leader/master of the cluster
